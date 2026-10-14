@@ -76,8 +76,3 @@ uv run adk run mcp_agent
 - 「workspace 裡有哪些檔案？」
 - 「讀一下 notes.txt」
 - 「幫我建一個 todo.md，內容列三件今天要做的事」
-
-## 下一步
-
-- **部署到 GCP**：`adk deploy cloud_run` 或 `adk deploy agent_engine`。注意 stdio 模式的 MCP server 必須和 agent 一起放進 container（需要 Node.js），否則就改成把 MCP server 獨立部署，再用 `StreamableHTTPConnectionParams` 連過去。
-- **接 M365 資料**：換成可存取 Microsoft Graph 的 MCP server，並處理 OAuth（`McpToolset` 的 `auth_scheme` / `auth_credential` / `header_provider`）。
