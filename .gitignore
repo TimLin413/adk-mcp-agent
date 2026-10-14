@@ -1,0 +1,30 @@
+# Secrets (GCP project, API keys)
+.env
+.env.*
+!.env.example
+
+# GCP credentials, in case a service account key ends up here
+*credentials*.json
+*service-account*.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+
+# ADK local session data created by `adk web` / `adk run`
+.adk/
+
+# Files the agent creates in the sandbox; keep only the sample file
+workspace/*
+!workspace/notes.txt
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

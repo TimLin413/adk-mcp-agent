@@ -1,0 +1,2 @@
+This is a sample file for the MCP filesystem demo.
+Ask the agent to list, read, or create files in this folder.
