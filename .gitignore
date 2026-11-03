@@ -6,6 +6,12 @@
 # GCP credentials, in case a service account key ends up here
 *credentials*.json
 *service-account*.json
+*-key.json
+.gcp-keys/
+
+# Agent 365 CLI output (contains the blueprint client secret)
+appsettings.json
+a365.generated.config.json
 
 # Python
 __pycache__/
